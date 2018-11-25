@@ -1,0 +1,92 @@
+#aboutUs,
+#contactUs {
+    svg {
+        fill: $primary;
+        height: 2rem;
+        width: 2rem;
+    }
+}
+#aboutUs {
+    li {
+        padding-bottom: 0.5em;
+    }
+}
+#contactUs {
+    li {
+        color: $dark;
+        padding: 0.5em;
+        font-weight: 700;
+    }
+}
+#join {
+    h4 {
+        margin-bottom: 1em;
+    }
+    .btn {
+        border-radius: 1em;
+        font-size: 1.25rem;
+        font-weight: 900;
+        padding: 0.5em 1.5em;
+        color: $white;
+    }
+}
+
+#banner {
+    background: url("../images/duotone1.png");
+    min-height: 15em;
+    color: $white;
+    text-align: center;
+    font-size: 1.5rem;
+    background-clip: border-box;
+    h1 {
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+    p {
+        font-size: 1.1em;
+    }
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2em;
+        }
+    }
+}
+
+#activities {
+    .icon {
+        display: flex;
+        justify-content: center;
+    }
+    svg {
+        fill: $grey;
+        height: 6rem;
+        height: 6rem;
+    }
+
+    a {
+        display: block;
+        text-align: center;
+        font-weight: 700;
+        margin-top: 0.5em;
+    }
+    .card {
+        border-top: 4px solid $grey;
+        &:hover {
+            svg {
+                fill: $primary;
+            }
+        }
+
+        .card-body {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+#footer {
+    svg {
+        // fill: $primary;
+        height: 1.25rem;
+        width: 1.25rem;
+    }
+}

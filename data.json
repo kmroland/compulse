@@ -1,0 +1,416 @@
+{
+    "context": "/home/roland/code/php/community-pulse",
+    "entry": {
+        "/js/admin": [
+            "/home/roland/code/php/community-pulse/node_modules/webpack-dev-server/client/index.js?http://localhost:8080",
+            "webpack/hot/dev-server",
+            "/home/roland/code/php/community-pulse/resources/js/admin.js",
+            "/home/roland/code/php/community-pulse/resources/sass/app.scss"
+        ],
+        "/js/main": [
+            "/home/roland/code/php/community-pulse/node_modules/webpack-dev-server/client/index.js?http://localhost:8080",
+            "webpack/hot/dev-server",
+            "/home/roland/code/php/community-pulse/resources/js/main.js"
+        ]
+    },
+    "output": {
+        "path": "/",
+        "filename": "[name].js",
+        "chunkFilename": "[name].js",
+        "publicPath": "http://localhost:8080/",
+        "library": "",
+        "hotUpdateFunction": "webpackHotUpdate",
+        "jsonpFunction": "webpackJsonp",
+        "libraryTarget": "var",
+        "sourceMapFilename": "[file].map[query]",
+        "hotUpdateChunkFilename": "[id].[hash].hot-update.js",
+        "hotUpdateMainFilename": "[hash].hot-update.json",
+        "crossOriginLoading": false,
+        "jsonpScriptType": "text/javascript",
+        "chunkLoadTimeout": 120000,
+        "hashFunction": "md5",
+        "hashDigest": "hex",
+        "hashDigestLength": 20,
+        "devtoolLineToLine": false,
+        "strictModuleExceptionHandling": false
+    },
+    "module": {
+        "rules": [
+            { "test": {}, "loaders": ["html-loader"] },
+            {
+                "test": {},
+                "loaders": [
+                    {
+                        "loader": "file-loader",
+                        "options": { "publicPath": "/" }
+                    },
+                    {
+                        "loader": "img-loader",
+                        "options": {
+                            "enabled": true,
+                            "gifsicle": {},
+                            "mozjpeg": {},
+                            "optipng": {},
+                            "svgo": {}
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "loader": "file-loader",
+                "options": { "publicPath": "/" }
+            },
+            {
+                "test": {},
+                "loader": "file-loader",
+                "options": { "name": "[name].[ext]?[hash]", "publicPath": "/" }
+            },
+            {
+                "test": {},
+                "exclude": {},
+                "use": [
+                    {
+                        "loader": "babel-loader",
+                        "options": {
+                            "cacheDirectory": true,
+                            "presets": [
+                                [
+                                    "env",
+                                    {
+                                        "modules": false,
+                                        "targets": {
+                                            "browsers": ["> 2%"],
+                                            "uglify": true
+                                        }
+                                    }
+                                ],
+                                "react"
+                            ],
+                            "plugins": [
+                                "transform-object-rest-spread",
+                                [
+                                    "transform-runtime",
+                                    { "polyfill": false, "helpers": false }
+                                ]
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "exclude": {},
+                "use": [
+                    {
+                        "loader": "babel-loader",
+                        "options": {
+                            "cacheDirectory": true,
+                            "presets": [
+                                [
+                                    "env",
+                                    {
+                                        "modules": false,
+                                        "targets": {
+                                            "browsers": ["> 2%"],
+                                            "uglify": true
+                                        }
+                                    }
+                                ],
+                                "react"
+                            ],
+                            "plugins": [
+                                "transform-object-rest-spread",
+                                [
+                                    "transform-runtime",
+                                    { "polyfill": false, "helpers": false }
+                                ]
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "test":
+                    "/home/roland/code/php/community-pulse/resources/sass/app.scss",
+                "use": [
+                    {
+                        "loader":
+                            "/home/roland/code/php/community-pulse/node_modules/extract-text-webpack-plugin/dist/loader.js",
+                        "options": { "id": 1, "omit": 1, "remove": true }
+                    },
+                    { "loader": "style-loader" },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "url": true,
+                            "sourceMap": false,
+                            "importLoaders": 1
+                        }
+                    },
+                    {
+                        "loader": "postcss-loader",
+                        "options": {
+                            "sourceMap": true,
+                            "ident": "postcss",
+                            "plugins": [null]
+                        }
+                    },
+                    {
+                        "loader": "resolve-url-loader",
+                        "options": {
+                            "sourceMap": true,
+                            "root":
+                                "/home/roland/code/php/community-pulse/node_modules",
+                            "absolute": false,
+                            "fail": false,
+                            "silent": false,
+                            "keepQuery": false,
+                            "attempts": 0,
+                            "debug": false,
+                            "includeRoot": false
+                        }
+                    },
+                    {
+                        "loader": "sass-loader",
+                        "options": {
+                            "precision": 8,
+                            "outputStyle": "expanded",
+                            "sourceMap": true
+                        }
+                    }
+                ]
+            },
+            { "test": {}, "loaders": ["style-loader", "css-loader"] },
+            {
+                "test": {},
+                "exclude": [
+                    "/home/roland/code/php/community-pulse/resources/sass/app.scss"
+                ],
+                "loaders": ["style-loader", "css-loader", "sass-loader"]
+            },
+            {
+                "test": {},
+                "exclude": [],
+                "loaders": ["style-loader", "css-loader", "less-loader"]
+            },
+            {
+                "test": {},
+                "loader": "vue-loader",
+                "exclude": {},
+                "options": {
+                    "loaders": {
+                        "js": {
+                            "loader": "babel-loader",
+                            "options": {
+                                "cacheDirectory": true,
+                                "presets": [
+                                    [
+                                        "env",
+                                        {
+                                            "modules": false,
+                                            "targets": {
+                                                "browsers": ["> 2%"],
+                                                "uglify": true
+                                            }
+                                        }
+                                    ],
+                                    "react"
+                                ],
+                                "plugins": [
+                                    "transform-object-rest-spread",
+                                    [
+                                        "transform-runtime",
+                                        { "polyfill": false, "helpers": false }
+                                    ]
+                                ]
+                            }
+                        }
+                    },
+                    "postcss": [null],
+                    "preLoaders": {},
+                    "postLoaders": {},
+                    "esModule": false
+                }
+            },
+            {
+                "test": {},
+                "loader": "vue-loader",
+                "exclude": {},
+                "options": {
+                    "loaders": {
+                        "js": {
+                            "loader": "babel-loader",
+                            "options": {
+                                "cacheDirectory": true,
+                                "presets": [
+                                    [
+                                        "env",
+                                        {
+                                            "modules": false,
+                                            "targets": {
+                                                "browsers": ["> 2%"],
+                                                "uglify": true
+                                            }
+                                        }
+                                    ],
+                                    "react"
+                                ],
+                                "plugins": [
+                                    "transform-object-rest-spread",
+                                    [
+                                        "transform-runtime",
+                                        { "polyfill": false, "helpers": false }
+                                    ]
+                                ]
+                            }
+                        }
+                    },
+                    "postcss": [null],
+                    "preLoaders": {},
+                    "postLoaders": {},
+                    "esModule": false
+                }
+            }
+        ],
+        "unknownContextRequest": ".",
+        "unknownContextRegExp": false,
+        "unknownContextRecursive": true,
+        "unknownContextCritical": true,
+        "exprContextRequest": ".",
+        "exprContextRegExp": false,
+        "exprContextRecursive": true,
+        "exprContextCritical": true,
+        "wrappedContextRegExp": {},
+        "wrappedContextRecursive": true,
+        "wrappedContextCritical": false,
+        "strictExportPresence": false,
+        "strictThisContextOnImports": false,
+        "unsafeCache": true
+    },
+    "plugins": [
+        {
+            "compilationSuccessInfo": {},
+            "shouldClearConsole": true,
+            "formatters": [null, null, null],
+            "transformers": [null, null, null]
+        },
+        {
+            "definitions": {
+                "process.env": {
+                    "MIX_PUSHER_APP_KEY": "\"\"",
+                    "MIX_PUSHER_APP_CLUSTER": "\"mt1\"",
+                    "NODE_ENV": "\"development\""
+                }
+            }
+        },
+        { "options": {} },
+        {
+            "options": {
+                "minimize": false,
+                "options": {
+                    "context":
+                        "/home/roland/code/php/community-pulse/node_modules/laravel-mix/src/builder",
+                    "output": { "path": "./" }
+                },
+                "test": {}
+            }
+        },
+        {},
+        {},
+        {},
+        { "filename": "/css/app.css", "id": 1, "options": {} },
+        {
+            "options": {
+                "title": "Laravel Mix",
+                "alwaysNotify": true,
+                "hint": "int:transient:1",
+                "contentImage":
+                    "/home/roland/code/php/community-pulse/node_modules/laravel-mix/icons/laravel.png"
+            },
+            "lastBuildSucceeded": false,
+            "isFirstBuild": true
+        },
+        { "options": {}, "fullBuildTimeout": 200, "requestTimeout": 10000 }
+    ],
+    "stats": {
+        "hash": false,
+        "version": false,
+        "timings": false,
+        "children": false,
+        "errorDetails": false,
+        "chunks": false,
+        "modules": false,
+        "reasons": false,
+        "source": false,
+        "publicPath": false
+    },
+    "performance": {
+        "hints": false,
+        "maxAssetSize": 250000,
+        "maxEntrypointSize": 250000
+    },
+    "devtool": false,
+    "devServer": {
+        "headers": { "Access-Control-Allow-Origin": "*" },
+        "contentBase": "/home/roland/code/php/community-pulse/public",
+        "historyApiFallback": true,
+        "noInfo": true,
+        "compress": true,
+        "quiet": true,
+        "host": "localhost",
+        "port": "8080",
+        "publicPath": "http://localhost:8080/",
+        "filename": "[name].js",
+        "hot": true,
+        "hotOnly": false,
+        "clientLogLevel": "info",
+        "stats": {
+            "cached": false,
+            "cachedAssets": false,
+            "colors": {
+                "stdout": {
+                    "level": 3,
+                    "hasBasic": true,
+                    "has256": true,
+                    "has16m": true
+                },
+                "stderr": {
+                    "level": 3,
+                    "hasBasic": true,
+                    "has256": true,
+                    "has16m": true
+                }
+            },
+            "context": "/home/roland/code/php/community-pulse"
+        }
+    },
+    "resolve": {
+        "extensions": ["*", ".js", ".jsx", ".vue"],
+        "alias": { "vue$": "vue/dist/vue.common.js" },
+        "unsafeCache": true,
+        "modules": ["node_modules"],
+        "mainFiles": ["index"],
+        "aliasFields": ["browser"],
+        "mainFields": ["browser", "module", "main"],
+        "cacheWithContext": false
+    },
+    "cache": true,
+    "target": "web",
+    "node": {
+        "console": false,
+        "process": true,
+        "global": true,
+        "Buffer": true,
+        "setImmediate": true,
+        "__filename": "mock",
+        "__dirname": "mock"
+    },
+    "resolveLoader": {
+        "unsafeCache": true,
+        "mainFields": ["loader", "main"],
+        "extensions": [".js", ".json"],
+        "mainFiles": ["index"],
+        "cacheWithContext": false
+    }
+}

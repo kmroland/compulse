@@ -1,0 +1,49 @@
+// Typography
+$font-family-serif: "Merriweather", serif;
+$font-family-sans-serif: "Source Sans Pro", sans-serif;
+$h1-font-size: 3.998em;
+$h2-font-size: 2.827em;
+$h3-font-size: 1.999em;
+$h4-font-size: 1.414em;
+$h5-font-size: 1.25em;
+$h6-font-size: 1em;
+$font-small: 0.707em;
+$font-size-base: 1.2rem;
+$line-height-base: 1.8;
+
+$headings-font-family: $font-family-serif;
+$headings-font-weight: 700 !default;
+//colors
+$primary: #36cad6;
+$primary-light: #41f2ff;
+$primary-dark: #2ba2ab;
+$black: #1a2526;
+$dark: #0f182f;
+$light: #c4d5d6;
+$grey: #94b3b5;
+$grey-light: #f7f7f7;
+$white: #fff;
+$accent: #d64135;
+$accent-light: #ff4e40;
+$accent-dark: #ab342a;
+// Body
+$body-bg: $grey-light;
+$body-color: $black;
+
+$border-radius: 0 !default;
+$border-radius-sm: 0 !default;
+//inputs
+$navbar-padding-y: 1px;
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+$theme-colors: (
+    "primary": $primary,
+    "primary-light": $primary-light,
+    "primary-dark": $primary-dark,
+    "accent": $accent,
+    "accent-light": $accent-light,
+    "accent-dark": $accent-dark,
+    "dark": $dark,
+    "white": $white
+);
